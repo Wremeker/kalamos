@@ -17,10 +17,6 @@ stored as HTML on each block's `text` field.
 
 ## Quick start
 
-```bash
-npm install @kalamoss/editor react react-dom
-```
-
 ```tsx
 import { useState } from 'react';
 import { EditorProvider, BlockEditor, type Block } from '@kalamoss/editor';
@@ -106,10 +102,6 @@ yarn test
 ```
 
 ## Using the editor package
-
-```bash
-npm install @kalamoss/editor react react-dom
-```
 
 ```tsx
 import { useState } from 'react';

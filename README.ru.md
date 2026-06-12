@@ -17,10 +17,6 @@
 
 ## Быстрый старт
 
-```bash
-npm install @kalamoss/editor react react-dom
-```
-
 ```tsx
 import { useState } from 'react';
 import { EditorProvider, BlockEditor, type Block } from '@kalamoss/editor';
@@ -106,10 +102,6 @@ yarn test
 ```
 
 ## Использование пакета редактора
-
-```bash
-npm install @kalamoss/editor react react-dom
-```
 
 ```tsx
 import { useState } from 'react';
