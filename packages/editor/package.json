@@ -1,6 +1,6 @@
 {
   "name": "@kalamos/editor",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Open-source Notion-style block editor for React",
   "license": "MIT",
   "type": "module",
