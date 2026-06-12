@@ -18,13 +18,13 @@
 ## Быстрый старт
 
 ```bash
-npm install @kalamos/editor react react-dom
+npm install @kalamoss/editor react react-dom
 ```
 
 ```tsx
 import { useState } from 'react';
-import { EditorProvider, BlockEditor, type Block } from '@kalamos/editor';
-import '@kalamos/editor/styles.css';
+import { EditorProvider, BlockEditor, type Block } from '@kalamoss/editor';
+import '@kalamoss/editor/styles.css';
 
 export function MyEditor() {
   const [blocks, setBlocks] = useState<Block[]>([]);
@@ -60,7 +60,7 @@ export function MyEditor() {
 ```
 kalamos/
 ├── packages/
-│   └── editor/        @kalamos/editor — пакет редактора на React
+│   └── editor/        @kalamoss/editor — пакет редактора на React
 ├── apps/
 │   ├── server/        эталонный бэкенд на Koa + Sequelize + PostgreSQL
 │   └── demo/          демо на Vite + React 19, связывающее редактор с бэкендом
@@ -108,13 +108,13 @@ yarn test
 ## Использование пакета редактора
 
 ```bash
-npm install @kalamos/editor react react-dom
+npm install @kalamoss/editor react react-dom
 ```
 
 ```tsx
 import { useState } from 'react';
-import { EditorProvider, BlockEditor, type Block } from '@kalamos/editor';
-import '@kalamos/editor/styles.css';
+import { EditorProvider, BlockEditor, type Block } from '@kalamoss/editor';
+import '@kalamoss/editor/styles.css';
 
 function MyEditor() {
   const [blocks, setBlocks] = useState<Block[]>([]);
@@ -129,7 +129,7 @@ function MyEditor() {
 > **Стилизация:** редактор использует утилитарные классы Tailwind. Либо соберите
 > Tailwind в своём приложении и подключите исходники редактора через `@source`
 > (см. `apps/demo/src/index.css`), либо предоставьте собственные эквивалентные
-> классы. `@kalamos/editor/styles.css` поставляет части, не относящиеся к
+> классы. `@kalamoss/editor/styles.css` поставляет части, не относящиеся к
 > Tailwind (KaTeX, highlight.js, плейсхолдеры contenteditable).
 
 ### UploadAdapter
@@ -138,7 +138,7 @@ function MyEditor() {
 хранилища:
 
 ```ts
-import type { UploadAdapter } from '@kalamos/editor';
+import type { UploadAdapter } from '@kalamoss/editor';
 
 const myUploadAdapter: UploadAdapter = {
   uploadImage: (file) => post('/api/v1/media/image', file),
@@ -156,7 +156,7 @@ const myUploadAdapter: UploadAdapter = {
 Регистрируйте собственные типы блоков и (при желании) пункты slash-меню:
 
 ```tsx
-import { registerBlock, type BlockRendererProps } from '@kalamos/editor';
+import { registerBlock, type BlockRendererProps } from '@kalamoss/editor';
 
 registerBlock({
   type: 'callout-tip',
@@ -178,7 +178,7 @@ registerBlock({
 строку через `EditorProvider`:
 
 ```tsx
-import { EditorProvider, defaultStrings } from '@kalamos/editor';
+import { EditorProvider, defaultStrings } from '@kalamoss/editor';
 
 <EditorProvider strings={{ editor: { bold: 'Gras' } }}>{children}</EditorProvider>
 ```

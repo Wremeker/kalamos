@@ -1,7 +1,7 @@
 {
   "name": "server",
   "version": "0.1.0",
-  "description": "Reference Koa + Sequelize + PostgreSQL backend for @kalamos/editor",
+  "description": "Reference Koa + Sequelize + PostgreSQL backend for @kalamoss/editor",
   "license": "MIT",
   "private": true,
   "type": "commonjs",

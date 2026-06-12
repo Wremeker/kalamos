@@ -1,4 +1,4 @@
-import type { Block } from '@kalamos/editor';
+import type { Block } from '@kalamoss/editor';
 import { API_BASE } from './config';
 
 export interface DocumentSummary {

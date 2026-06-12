@@ -10,8 +10,8 @@
     "apps/*"
   ],
   "scripts": {
-    "build": "yarn workspaces foreach -At --include '@kalamos/*' --include 'server' --include 'demo' run build",
-    "build:editor": "yarn workspace @kalamos/editor run build",
+    "build": "yarn workspaces foreach -At --include '@kalamoss/*' --include 'server' --include 'demo' run build",
+    "build:editor": "yarn workspace @kalamoss/editor run build",
     "typecheck": "yarn workspaces foreach -At run typecheck",
     "test": "yarn workspaces foreach -At run test",
     "dev:server": "yarn workspace server run dev",

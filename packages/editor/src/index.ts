@@ -1,4 +1,4 @@
-// Public API for @kalamos/editor.
+// Public API for @kalamoss/editor.
 
 // Editor surfaces
 export { BlockEditor } from './components/editor/BlockEditor';

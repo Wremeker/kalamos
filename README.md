@@ -18,13 +18,13 @@ stored as HTML on each block's `text` field.
 ## Quick start
 
 ```bash
-npm install @kalamos/editor react react-dom
+npm install @kalamoss/editor react react-dom
 ```
 
 ```tsx
 import { useState } from 'react';
-import { EditorProvider, BlockEditor, type Block } from '@kalamos/editor';
-import '@kalamos/editor/styles.css';
+import { EditorProvider, BlockEditor, type Block } from '@kalamoss/editor';
+import '@kalamoss/editor/styles.css';
 
 export function MyEditor() {
   const [blocks, setBlocks] = useState<Block[]>([]);
@@ -60,7 +60,7 @@ control.
 ```
 kalamos/
 ├── packages/
-│   └── editor/        @kalamos/editor — the React editor package
+│   └── editor/        @kalamoss/editor — the React editor package
 ├── apps/
 │   ├── server/        Koa + Sequelize + PostgreSQL reference backend
 │   └── demo/          Vite + React 19 demo wiring the editor to the backend
@@ -108,13 +108,13 @@ yarn test
 ## Using the editor package
 
 ```bash
-npm install @kalamos/editor react react-dom
+npm install @kalamoss/editor react react-dom
 ```
 
 ```tsx
 import { useState } from 'react';
-import { EditorProvider, BlockEditor, type Block } from '@kalamos/editor';
-import '@kalamos/editor/styles.css';
+import { EditorProvider, BlockEditor, type Block } from '@kalamoss/editor';
+import '@kalamoss/editor/styles.css';
 
 function MyEditor() {
   const [blocks, setBlocks] = useState<Block[]>([]);
@@ -128,7 +128,7 @@ function MyEditor() {
 
 > **Styling:** the editor uses Tailwind utility classes. Either build Tailwind in
 > your app and include the editor source via `@source` (see `apps/demo/src/index.css`),
-> or supply your own equivalent classes. `@kalamos/editor/styles.css` ships
+> or supply your own equivalent classes. `@kalamoss/editor/styles.css` ships
 > the non-Tailwind pieces (KaTeX, highlight.js, contenteditable placeholders).
 
 ### UploadAdapter
@@ -136,7 +136,7 @@ function MyEditor() {
 Media uploads are injected so the editor stays storage-agnostic:
 
 ```ts
-import type { UploadAdapter } from '@kalamos/editor';
+import type { UploadAdapter } from '@kalamoss/editor';
 
 const myUploadAdapter: UploadAdapter = {
   uploadImage: (file) => post('/api/v1/media/image', file),
@@ -154,7 +154,7 @@ Each method resolves to `{ url }`. See `apps/demo/src/uploadAdapter.ts`.
 Register your own block types and (optionally) slash-menu entries:
 
 ```tsx
-import { registerBlock, type BlockRendererProps } from '@kalamos/editor';
+import { registerBlock, type BlockRendererProps } from '@kalamoss/editor';
 
 registerBlock({
   type: 'callout-tip',
@@ -175,7 +175,7 @@ See `apps/demo/src/customBlocks.tsx`.
 The editor ships English defaults. Override any string via `EditorProvider`:
 
 ```tsx
-import { EditorProvider, defaultStrings } from '@kalamos/editor';
+import { EditorProvider, defaultStrings } from '@kalamoss/editor';
 
 <EditorProvider strings={{ editor: { bold: 'Gras' } }}>{children}</EditorProvider>
 ```

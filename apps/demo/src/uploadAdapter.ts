@@ -1,4 +1,4 @@
-import type { UploadAdapter, UploadResult } from '@kalamos/editor';
+import type { UploadAdapter, UploadResult } from '@kalamoss/editor';
 import { API_BASE } from './config';
 
 async function upload(endpoint: string, file: File): Promise<UploadResult> {

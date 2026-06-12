@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { BlockEditor, type Block } from '@kalamos/editor';
+import { BlockEditor, type Block } from '@kalamoss/editor';
 import { documentsApi } from '../api';
 import { EmojiButton } from './EmojiButton';
 

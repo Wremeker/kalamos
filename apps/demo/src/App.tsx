@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { EditorProvider } from '@kalamos/editor';
+import { EditorProvider } from '@kalamoss/editor';
 import { httpUploadAdapter } from './uploadAdapter';
 import { Workspace } from './components/DocumentList';
 

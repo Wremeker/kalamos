@@ -18,13 +18,13 @@ jobs:
       - name: Typecheck
         run: yarn typecheck
       - name: Build editor package
-        run: yarn workspace @kalamos/editor run build
+        run: yarn workspace @kalamoss/editor run build
       - name: Build server
         run: yarn workspace server run build
       - name: Build demo
         run: yarn workspace demo run build
       - name: Test editor package
-        run: yarn workspace @kalamos/editor run test
+        run: yarn workspace @kalamoss/editor run test
       - name: Test server (sqlite)
         run: yarn workspace server run test
         env:
@@ -61,7 +61,7 @@ jobs:
       - run: yarn install --immutable
       - name: Build editor + demo
         run: |
-          yarn workspace @kalamos/editor run build
+          yarn workspace @kalamoss/editor run build
           yarn workspace demo run build
       - name: Install Playwright browsers
         run: yarn workspace demo exec playwright install --with-deps chromium

@@ -19,8 +19,8 @@ jobs:
           registry-url: https://registry.npmjs.org
       - run: corepack enable
       - run: yarn install --immutable
-      - run: yarn workspace @kalamos/editor run build
+      - run: yarn workspace @kalamoss/editor run build
       - name: Publish to npm
-        run: yarn workspace @kalamos/editor npm publish --access public
+        run: yarn workspace @kalamoss/editor npm publish --access public
         env:
           YARN_NPM_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

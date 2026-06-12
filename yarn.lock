@@ -1453,9 +1453,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@kalamos/editor@workspace:*, @kalamos/editor@workspace:packages/editor":
+"@kalamoss/editor@workspace:*, @kalamoss/editor@workspace:packages/editor":
   version: 0.0.0-use.local
-  resolution: "@kalamos/editor@workspace:packages/editor"
+  resolution: "@kalamoss/editor@workspace:packages/editor"
   dependencies:
     "@testing-library/dom": "npm:^10.4.0"
     "@testing-library/jest-dom": "npm:^6.6.3"
@@ -3661,7 +3661,7 @@ __metadata:
   dependencies:
     "@heroui/react": "npm:^3.1.0"
     "@heroui/styles": "npm:^3.1.0"
-    "@kalamos/editor": "workspace:*"
+    "@kalamoss/editor": "workspace:*"
     "@playwright/test": "npm:^1.49.1"
     "@tailwindcss/vite": "npm:^4.0.0"
     "@types/react": "npm:^19.0.0"
