@@ -60,8 +60,7 @@ kalamos/
 ├── apps/
 │   ├── server/        Koa + Sequelize + PostgreSQL reference backend
 │   └── demo/          Vite + React 19 demo wiring the editor to the backend
-├── docker-compose.yml postgres + server + demo
-└── .github/workflows/ CI + publish
+└── docker-compose.yml postgres + server + demo
 ```
 
 ## Quick start (Docker)

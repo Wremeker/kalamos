@@ -60,8 +60,7 @@ kalamos/
 ├── apps/
 │   ├── server/        эталонный бэкенд на Koa + Sequelize + PostgreSQL
 │   └── demo/          демо на Vite + React 19, связывающее редактор с бэкендом
-├── docker-compose.yml postgres + server + demo
-└── .github/workflows/ CI + публикация
+└── docker-compose.yml postgres + server + demo
 ```
 
 ## Быстрый старт (Docker)
