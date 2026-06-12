@@ -9,5 +9,5 @@
       "react-i18next": ["./src/shims/react-i18next.ts"]
     }
   },
-  "include": ["src"]
+  "include": ["src", "vitest.setup.ts"]
 }
