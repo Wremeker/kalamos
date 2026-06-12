@@ -1,0 +1,31 @@
+/* @kalamos/editor base styles.
+ *
+ * Ships the non-Tailwind dependencies the editor needs (KaTeX math + a
+ * highlight.js theme) plus the small amount of editor-specific CSS that cannot
+ * be expressed with utility classes (contenteditable placeholders, drawing
+ * cursor). Tailwind utility classes used throughout the editor must be provided
+ * by the host app's Tailwind build (see README).
+ */
+
+@import "katex/dist/katex.min.css";
+@import "highlight.js/styles/github.css";
+
+/* Placeholder text for empty contenteditable blocks. */
+[data-placeholder]:empty::before,
+[data-placeholder].is-empty::before {
+  content: attr(data-placeholder);
+  color: #9ca3af;
+  pointer-events: none;
+  cursor: text;
+}
+
+/* Keep contenteditable blocks from collapsing when empty. */
+.kalamos-editor [contenteditable] {
+  outline: none;
+  min-height: 1em;
+}
+
+/* Image drawing overlay uses a crosshair cursor while active. */
+.kalamos-editor-drawing-active {
+  cursor: crosshair;
+}

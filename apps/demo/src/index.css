@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+/* HeroUI v3 design system (must come immediately after tailwindcss).
+ * Provides semantic color tokens (bg-background, text-muted, bg-surface, …),
+ * the dark theme (activated via the `.dark` class), and component styles. */
+@import "@heroui/styles";
+
+/* The `dark:` Tailwind variant is opt-in via a `.dark` class rather than the OS
+ * `prefers-color-scheme`. The documents page applies `.dark` to render the
+ * Notion-style dark UI; the editor stays light. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Generate the Tailwind utility classes used inside the editor package source
+ * (Tailwind v4 does not scan node_modules by default). */
+@source "../../../packages/editor/src/**/*.{ts,tsx}";
+
+/* KaTeX + highlight.js + editor base styles. */
+@import "@kalamos/editor/styles.css";
+
+/* Use Inter — the font HeroUI's design system ships with — everywhere. Feeding
+ * it into HeroUI's `--font-sans` token makes every HeroUI component pick it up. */
+:root {
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-feature-settings: "cv11", "ss01";
+  -webkit-font-smoothing: antialiased;
+  color: #111827;
+  background: #f9fafb;
+}
